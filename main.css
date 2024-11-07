@@ -197,6 +197,10 @@ footer{
 /*PARTE RESPONSIVE*/
 
 @media screen and (max-width:1050px) {
+    .caja div{
+        padding: 0;
+    }
+    
     .navegacion{
         position: fixed;
         top: 0;
