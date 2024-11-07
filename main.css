@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4{
+    font-family:"PT Sans", serif; ;
+}
+p{
+    font-family: "PT Sans", serif;;
+}
+body{
+    background-color: #efefef ;
+    margin: auto;
+}
+
+.caja{
+    display: block;
+    text-align: center;
+    
+}
+
+.header{
+    height: auto;
+    text-align: center;
+    background-color: #000000;
+    color: #efefef;
+    font-size: 20px;
+}
+
+header h1{
+    text-align: center;
+     font-size: 3rem;
+     padding-top: 2rem;
+ }
+
+header #btn-menu{
+   display: none;
+ }
+
+.navegacion img{
+    border: solid 5px #efefef;
+    transform: translateY(40px);
+    width: 300px;
+    border-radius: 50%;
+   
+}
+
+.navegacion{
+    display: flex;
+    transform: translateY(90px);
+    width: 100%;
+}
+
+.navegacion li{
+    list-style: none;
+    width: 50px;
+    margin-top: 15px;
+    flex: 1 1 auto;
+    transform: translateY(170px);
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    border-bottom: black;
+}
+
+.navegacion a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+}
+
+section{
+    margin: 130px auto 15px auto;
+    width: 60%;
+    height: auto;
+    border-radius: 3px;
+    border: solid 1px #8f8f8f;
+    background-color: #ebeaea;
+    text-align: center;
+}
+
+section p{
+    margin-top: 1rem;
+}
+
+section ul {
+    padding: 15px 250px;
+    display: flex; 
+
+}
+
+section li{
+    flex: 1 1 auto;
+    list-style: none;
+    text-align: center;
+    font-size: 1.5rem;
+    
+    
+}
+
+section a{
+    color: #3b6210;
+    width: 100%;
+    font-size: 2rem;
+}
+
+section a:hover{
+    color: white;
+}
+
+section button{
+    background-color: rgb(0, 0, 255);
+    color: #efefef;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 7px #555;;
+    margin: 1rem 0;
+}
+
+section button:hover{
+    background-color: white;
+    color: #000000;
+}
+section p{
+    margin: 10px 10px;
+}
+
+.caja h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.caja div{
+    padding: 20px 12px;
+
+}
+
+.experiencia{
+    display:grid;
+    border: solid  #555;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0 12px;
+}
+
+
+.experiencia-cuadros p{
+    padding: 12px 30px;
+}
+
+.experiencia-cuadros h3, .experiencia-cuadros h4{
+    padding: 12px 5px 0 5px;
+    border: solid 0.5px #ffff;
+    background-color: #668300;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.conocimientos{
+    font-family: "PT Sans", serif;
+    font-size: 1.5rem;
+    
+    width: 100%;
+}
+
+.conocimientos ul{
+    padding: 0 20%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.conocimientos li{
+    
+    padding: 12px 0px;
+    list-style: none;
+    background-color: #F2E7AE;
+    border: solid 0.5px #fff;
+    border-radius: 8px;
+}
+
+footer{
+    font-family: "PT Sans", serif;
+    text-align: center;
+    background-color: #734D3F;
+    padding: 2rem 0;
+}
+
+#google_translate_element{
+    width: 50px;
+}
+
+/*PARTE RESPONSIVE*/
+
+@media screen and (max-width:1050px) {
+    .navegacion{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #ffffff;
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 1;
+              
+    }
+
+    .navegacion{
+        display: none;
+        transform: translateY(0);
+    }
+
+    .navegacion img{
+        width: 100px;
+        height: 100px;
+        transform: translateY(-120px);
+        
+    }
+
+    .navegacion ul{
+        width: 100%;
+    }
+
+    .navegacion li{
+    width: 100%;
+    margin-top: 15px;
+    flex: 1 1 auto;
+    transform: translateY(90px);
+    margin: 25px 0;
+
+    }
+
+    .navegacion li a{
+        color: #ffffff;
+        font-size: 15px;
+        border:solid .5px #ffffff;
+        border-radius: 8px;
+        background-color: #b59b73;
+        
+    }
+    #move{
+        transform: translateY(-40px);
+    }
+
+    header #btn-menu{
+        display: flex;
+        border-radius: 20px;
+        right: 0;
+        position: fixed;
+        transform: translateY(-20px);
+        width: 45px;
+        background-color: rgb(151, 151, 151);
+    }
+
+    header #btn-menu:hover{
+        background-color: #F2E7AE;
+    }
+
+    .back_menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5 );
+        display: none;     
+    }
+
+    .redes{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        width: auto;
+        padding: 15px 40px;
+    }
+
+    .conocimientos{
+        font-size: 12px;
+    }
+    
+}
