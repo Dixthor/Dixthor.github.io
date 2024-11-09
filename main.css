@@ -197,10 +197,11 @@ footer{
 /*PARTE RESPONSIVE*/
 
 @media screen and (max-width:1050px) {
+
     .caja div{
         padding: 0;
     }
-    
+
     .navegacion{
         position: fixed;
         top: 0;
@@ -274,6 +275,13 @@ footer{
         display: none;     
     }
 
+    section{
+        margin: 40px auto 1px auto;
+        width: 90%;
+    }
+
+
+
     .redes{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -282,8 +290,26 @@ footer{
         padding: 15px 40px;
     }
 
+    .caja div{
+        padding: 0 3px;
+    }
+
+    .experiencia-cuadros p {
+        text-align: left;
+        padding: 12px 6px;
+        border: solid 0.2px #668300;
+        margin: 6px 0;
+    }
+
     .conocimientos{
         font-size: 12px;
+        margin-bottom: 10px;
     }
+
+    .conocimientos ul{
+        padding: 0 12px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
     
 }
